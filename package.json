@@ -1,6 +1,6 @@
 {
   "name": "@mjt-engine/error",
-  "version": "2025.3.28-1936",
+  "version": "2025.4.19-1124",
   "sideEffects": false,
   "description": "error module",
   "main": "./dist/index.js",
