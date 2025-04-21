@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2025-04-21
+- make errrorToErrorDetail sync ([65b1741](https://github.com/mjt-engine/error/commit/65b1741f7d636e1392bd3eed43b152e06e8134e1)) by Matt Taylor
+
 ## 2025-04-19
 - fix typo on index.ts filename ([a0538bd](https://github.com/mjt-engine/error/commit/a0538bdb1cbb12e63cb01df7ff2381fe1d4b7c3f)) by Matt Taylor
 - reorg of code ([dbbd845](https://github.com/mjt-engine/error/commit/dbbd845c2d5abcaa0d6b32f727c02b1424afd643)) by Matt Taylor

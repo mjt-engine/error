@@ -3,7 +3,7 @@ export declare const Errors: {
         error: unknown;
         stack?: string;
         extra?: unknown[];
-    }) => Promise<import("./ErrorDetail").ErrorDetail>;
+    }) => import("./ErrorDetail").ErrorDetail;
     errorToText: (error: unknown) => string;
     errorToTextAsync: (error: unknown) => Promise<string>;
 };

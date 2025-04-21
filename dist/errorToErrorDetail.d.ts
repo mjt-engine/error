@@ -3,4 +3,4 @@ export declare const errorToErrorDetail: ({ error, extra, stack, }: {
     error: unknown;
     stack?: string;
     extra?: unknown[];
-}) => Promise<ErrorDetail>;
+}) => ErrorDetail;
