@@ -1,8 +1,8 @@
 import { isDefined } from "@mjt-engine/object";
-import { errorToTextAsync } from "./errorToText";
 import type { ErrorDetail } from "./ErrorDetail";
+import { errorToText } from "./errorToText";
 
-export const errorToErrorDetail = async ({
+export const errorToErrorDetail = ({
   error,
   extra,
   stack,
@@ -10,10 +10,10 @@ export const errorToErrorDetail = async ({
   error: unknown;
   stack?: string;
   extra?: unknown[];
-}): Promise<ErrorDetail> => {
+}): ErrorDetail => {
   if (error instanceof Error) {
     const cause = isDefined(error.cause)
-      ? await errorToErrorDetail({ error: error.cause })
+      ? errorToErrorDetail({ error: error.cause })
       : undefined;
     return {
       message: error.message,
@@ -23,7 +23,7 @@ export const errorToErrorDetail = async ({
     };
   }
   return {
-    message: await errorToTextAsync(error),
+    message: errorToText(error),
     stack,
     extra,
   };
