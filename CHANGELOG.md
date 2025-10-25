@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 2025-10-25
+- bump-deps ([aed89d3](https://github.com/mjt-engine/error/commit/aed89d372c7855572c70e923d0841e08fda4b966)) by Matt Taylor
+
 ## 2025-04-21
 - make errrorToErrorDetail sync ([65b1741](https://github.com/mjt-engine/error/commit/65b1741f7d636e1392bd3eed43b152e06e8134e1)) by Matt Taylor
 
